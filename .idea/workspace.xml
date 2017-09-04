@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a63cd2-b410-486f-b040-05f779e97a2b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/string-utils/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/string-utils/src/main/java/com/progressoft/utils/strings/StringUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/string-utils/src/test/java/com/progressoft/utils/strings/StringUtilsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/string-utils/string-utils.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/strings.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,6 +20,8 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/graphs/graph/target/" />
     <ignored path="$PROJECT_DIR$/graphs/depth-first-search/target/" />
+    <ignored path="$PROJECT_DIR$/strings/target/" />
+    <ignored path="$PROJECT_DIR$/strings/string-utils/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,96 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/depth-first-search/pom.xml">
+      <file leaf-file-name="StringUtilsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/strings/string-utils/src/test/java/com/progressoft/utils/strings/StringUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanReachTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/depth-first-search/src/test/java/com/progressoft/utils/dfs/CanReachTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1410#1411#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanReach.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/depth-first-search/src/main/java/com/progressoft/utils/dfs/CanReach.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnweightedGraphSpy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/graph/src/test/java/com/progressoft/utils/graph/unweighted/UnweightedGraphSpy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-              <folding>
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnweightedGraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/graph/src/main/java/com/progressoft/utils/graph/unweighted/UnweightedGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1345#1346#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1636#1637#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#1985#1986#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnweightedGraphTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/graph/src/test/java/com/progressoft/utils/graph/unweighted/UnweightedGraphTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="123" column="53" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
+            <state relative-caret-position="310">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,10 +51,20 @@
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/graph/pom.xml">
+        <entry file="file://$PROJECT_DIR$/strings/string-utils/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            <state relative-caret-position="135">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strings/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -137,9 +73,21 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strings/string-utils/src/main/java/com/progressoft/utils/strings/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +130,12 @@
         <option value="$PROJECT_DIR$/graphs/depth-first-search/src/main/java/com/progressoft/utils/dfs/CanReach.java" />
         <option value="$PROJECT_DIR$/graphs/depth-first-search/src/test/java/com/progressoft/utils/dfs/CanReachTest.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/strings/pom.xml" />
+        <option value="$PROJECT_DIR$/strings/src/test/java/com/progressoft/utils/strings/StringUtilsTest.java" />
+        <option value="$PROJECT_DIR$/strings/src/main/java/com/progressoft/utils/strings/StringUtils.java" />
+        <option value="$PROJECT_DIR$/strings/string-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/strings/string-utils/src/test/java/com/progressoft/utils/strings/StringUtilsTest.java" />
       </list>
     </option>
   </component>
@@ -257,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,11 +225,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
+              <option name="myItemId" value="string-utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,11 +243,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
+              <option name="myItemId" value="string-utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -309,7 +263,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="unweighted" />
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,85 +277,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="depth-first-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="depth-first-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="depth-first-search" />
+              <option name="myItemId" value="string-utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -414,6 +294,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,62 +314,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.progressoft.utils.strings" />
+      <recent name="com.progressoft.utils" />
       <recent name="com.progressoft.utils.graph" />
       <recent name="com.progressoft.utils.graph.unweighted" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.progressoft.utils.strings" />
       <recent name="com.progressoft.utils.dfs" />
       <recent name="com.progressoft.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CanReachTest">
-    <configuration default="false" name="All Tests" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.progressoft" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UnweightedGraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.progressoft.utils.graph.unweighted.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="graph" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.progressoft.utils.graph.unweighted" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.graph.unweighted.UnweightedGraphTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.StringUtilsTest">
     <configuration default="false" name="CanReachTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -512,19 +352,97 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CanReachTest.givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StringUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.progressoft.utils.dfs.*" />
+          <option name="PATTERN" value="com.progressoft.utils.strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="depth-first-search" />
+      <module name="string-utils" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.progressoft.utils.dfs" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.dfs.CanReachTest" />
-      <option name="METHOD_NAME" value="givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" />
+      <option name="PACKAGE_NAME" value="com.progressoft.utils.strings" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.strings.StringUtilsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringUtilsTest.usingStringUtils_whenCallingIsNumberWithNonNumberString_thenShouldReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.utils.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="string-utils" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.progressoft.utils.strings" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.strings.StringUtilsTest" />
+      <option name="METHOD_NAME" value="usingStringUtils_whenCallingIsNumberWithNonNumberString_thenShouldReturnFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringUtilsTest.usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.utils.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="string-utils" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.progressoft.utils.strings" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.strings.StringUtilsTest" />
+      <option name="METHOD_NAME" value="usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringUtilsTest.usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.utils.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="string-utils" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.progressoft.utils.strings" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.utils.strings.StringUtilsTest" />
+      <option name="METHOD_NAME" value="usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -782,18 +700,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All Tests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UnweightedGraphTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CanReachTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CanReachTest.givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CanReachTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StringUtilsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingIsNumberWithNonNumberString_thenShouldReturnFalse" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CanReachTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All Tests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UnweightedGraphTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CanReachTest.givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StringUtilsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StringUtilsTest.usingStringUtils_whenCallingIsNumberWithNonNumberString_thenShouldReturnFalse" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CanReachTest" />
       </list>
     </recent_temporary>
   </component>
@@ -811,35 +731,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2017.09.04 at 18h 11m 47s.xml">
-      <configuration name="All Tests" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 44m 36s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest - 2017.09.04 at 18h 07m 14s.xml">
-      <configuration name="CanReachTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 44m 48s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest - 2017.09.04 at 18h 12m 11s.xml">
-      <configuration name="CanReachTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 46m 22s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest - 2017.09.04 at 18h 12m 49s.xml">
-      <configuration name="CanReachTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 47m 26s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest - 2017.09.04 at 18h 13m 28s.xml">
-      <configuration name="CanReachTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 47m 54s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest - 2017.09.04 at 18h 13m 56s.xml">
-      <configuration name="CanReachTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 48m 14s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest_givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue - 2017.09.04 at 18h 05m 28s.xml">
-      <configuration name="CanReachTest.givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest - 2017.09.05 at 01h 49m 31s.xml">
+      <configuration name="StringUtilsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanReachTest_givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue - 2017.09.04 at 18h 06m 04s.xml">
-      <configuration name="CanReachTest.givenCanReach_whenCallingExecuteWithSourcemNodeThatCanReachTargetNode_thenShouldReturnTrue" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest_usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException - 2017.09.05 at 01h 45m 11s.xml">
+      <configuration name="StringUtilsTest.usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnweightedGraphTest - 2017.09.04 at 18h 10m 19s.xml">
-      <configuration name="UnweightedGraphTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest_usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException - 2017.09.05 at 01h 45m 26s.xml">
+      <configuration name="StringUtilsTest.usingStringUtils_whenCallingIsAlphabetWithEmptyString_thenShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnweightedGraphTest - 2017.09.04 at 18h 10m 37s.xml">
-      <configuration name="UnweightedGraphTest" configurationId="JUnit" />
+    <history-entry file="StringUtilsTest_usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException - 2017.09.05 at 01h 46m 12s.xml">
+      <configuration name="StringUtilsTest.usingStringUtils_whenCallingReverseStringWithNullString_thenShouldThrowException" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -885,7 +805,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -894,14 +814,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/graph/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -922,14 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -991,8 +895,8 @@
         <state relative-caret-position="30">
           <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
           <folding>
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1030,6 +934,77 @@
         <state relative-caret-position="45">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/src/test/java/com/progressoft/utils/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="801" column="36" selection-start-line="801" selection-start-column="15" selection-end-line="801" selection-end-column="36" />
+          <folding>
+            <element signature="e#34114#34115#0" expanded="true" />
+            <element signature="e#34170#34171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/string-utils/src/main/java/com/progressoft/utils/strings/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/string-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/string-utils/src/test/java/com/progressoft/utils/strings/StringUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

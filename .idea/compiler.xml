@@ -24,12 +24,15 @@
         <processorPath useClasspath="true" />
         <module name="depth-first-search" />
         <module name="graph" />
+        <module name="string-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="depth-first-search" target="1.8" />
       <module name="graph" target="1.8" />
       <module name="graphs" target="1.8" />
+      <module name="string-utils" target="1.8" />
+      <module name="strings" target="1.8" />
       <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
