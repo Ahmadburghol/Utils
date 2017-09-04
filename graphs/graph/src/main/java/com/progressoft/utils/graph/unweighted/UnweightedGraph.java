@@ -1,15 +1,29 @@
 package com.progressoft.utils.graph.unweighted;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class UnweightedGraph {
 
-    protected ArrayList<Integer> [] adjacencyList;
+    interface VisitStatus {
+        boolean value();
+    }
+
+    protected final ArrayList<Integer> [] adjacencyList;
+
+    protected final VisitStatus [] nodeStatus;
+
+    private final static VisitStatus VISITED = () -> true;
+
+    private final static VisitStatus NOT_VISITED = () -> false;
 
     public UnweightedGraph(int maximumNumberOfNodes) {
         if(maximumNumberOfNodes<=0)
             throw new InvalidNodesNumberException();
-        initializeAdjacencyList(maximumNumberOfNodes);
+        this.adjacencyList = new ArrayList[maximumNumberOfNodes];
+        this.nodeStatus = new VisitStatus[maximumNumberOfNodes];
+        initializeGraph(maximumNumberOfNodes);
     }
 
     public void addDirectedEdge(int from, int to) {
@@ -19,14 +33,29 @@ public class UnweightedGraph {
     }
 
     public void clear() {
-        for(int i = 0; i< adjacencyList.length; ++i)
+        for(int i = 0; i< adjacencyList.length; ++i) {
             adjacencyList[i].clear();
+            nodeStatus[i] = NOT_VISITED;
+        }
     }
 
-    private void initializeAdjacencyList(int maximumNumberOfNodes) {
-        adjacencyList = new ArrayList[maximumNumberOfNodes];
-        for(int i = 0; i< adjacencyList.length; ++i)
+    public void visit(int nodeId) {
+        nodeStatus[nodeId-1] = VISITED;
+    }
+
+    public boolean visitStatus(int nodeId) {
+        return nodeStatus[nodeId-1].value();
+    }
+
+    public Set<Integer> adjacencyOf(int nodeId) {
+        return new HashSet<>(adjacencyList[nodeId-1]);
+    }
+
+    private void initializeGraph(int maximumNumberOfNodes) {
+        for(int i = 0; i< maximumNumberOfNodes; ++i) {
             adjacencyList[i] = new ArrayList<Integer>();
+            nodeStatus[i] = NOT_VISITED;
+        }
     }
 
     private boolean invalidNodeId(int nodeId) {

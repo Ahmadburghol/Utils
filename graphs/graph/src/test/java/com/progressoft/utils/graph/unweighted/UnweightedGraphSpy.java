@@ -10,4 +10,7 @@ public class UnweightedGraphSpy extends UnweightedGraph {
         return adjacencyList[from-1].contains(to-1);
     }
 
+    public boolean isNodeVisited(int nodeId) {
+        return nodeStatus[nodeId-1].value();
+    }
 }
