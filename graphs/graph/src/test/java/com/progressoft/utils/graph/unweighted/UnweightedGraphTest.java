@@ -1,6 +1,5 @@
 package com.progressoft.utils.graph.unweighted;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -61,6 +60,11 @@ public class UnweightedGraphTest {
     }
 
     @Test
+    public void creatingGraph_whenAskingForGraphSize_thenShouldReturnTheSize() {
+        assertEquals(100,new UnweightedGraph(100).size());
+    }
+
+    @Test
     public void creatingGraph_whenAddDirectedEdgeBetweenTwoNodes_thenTheEdgeShouldBeExists() {
         UnweightedGraphSpy graphSpy = new UnweightedGraphSpy(100);
         graphSpy.addDirectedEdge(5, 10);
@@ -116,8 +120,8 @@ public class UnweightedGraphTest {
         graphSpy.addDirectedEdge(5, 3);
         graphSpy.addDirectedEdge(5, 3);
         assertEquals(2, graphSpy.adjacencyOf(5).size());
-        assertTrue(graphSpy.adjacencyOf(5).contains(0));
-        assertTrue(graphSpy.adjacencyOf(5).contains(2));
+        assertTrue(graphSpy.adjacencyOf(5).contains(1));
+        assertTrue(graphSpy.adjacencyOf(5).contains(3));
     }
 
 }

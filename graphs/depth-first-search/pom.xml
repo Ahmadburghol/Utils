@@ -1,21 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>utils</artifactId>
+        <artifactId>graphs</artifactId>
         <groupId>com.progressoft.utils</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>graphs</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>depth-first-search</artifactId>
+    <packaging>jar</packaging>
 
-    <name>graphs</name>
+    <name>depth-first-search</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>graph</module>
-        <module>depth-first-search</module>
-    </modules>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -29,6 +25,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.progressoft.utils</groupId>
+            <artifactId>graph</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
