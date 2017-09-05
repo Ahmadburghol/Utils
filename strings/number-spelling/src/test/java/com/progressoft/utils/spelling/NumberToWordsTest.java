@@ -259,4 +259,9 @@ public class NumberToWordsTest {
         assertEquals("four hundred fifty-three billion eight hundred seventy-five million one hundred twenty-three thousand four hundred fifty-nine",numberToWords.spell(453_875_123_459L));
     }
 
+    @Test
+    public void givenNumberToWords_whenAskigForSpellingLargeNumber_2_thenShouldReturnTheNumberAsWords() {
+        assertEquals("nine billion nine hundred ninety million",numberToWords.spell(9_990_000_000L));
+    }
+
 }
