@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="depth-first-search" />
         <module name="graph" />
+        <module name="number-spelling" />
         <module name="string-utils" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="depth-first-search" target="1.8" />
       <module name="graph" target="1.8" />
       <module name="graphs" target="1.8" />
+      <module name="number-spelling" target="1.8" />
       <module name="string-utils" target="1.8" />
       <module name="strings" target="1.8" />
       <module name="utils" target="1.8" />

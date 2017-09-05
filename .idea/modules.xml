@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/graphs/depth-first-search/depth-first-search.iml" filepath="$PROJECT_DIR$/graphs/depth-first-search/depth-first-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/graphs/graph/graph.iml" filepath="$PROJECT_DIR$/graphs/graph/graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/graphs/graphs.iml" filepath="$PROJECT_DIR$/graphs/graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/strings/number-spelling/number-spelling.iml" filepath="$PROJECT_DIR$/strings/number-spelling/number-spelling.iml" />
       <module fileurl="file://$PROJECT_DIR$/strings/string-utils/string-utils.iml" filepath="$PROJECT_DIR$/strings/string-utils/string-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/strings/strings.iml" filepath="$PROJECT_DIR$/strings/strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils.iml" filepath="$PROJECT_DIR$/utils.iml" />
