@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class AbstractEnglishFamiliesToSpellInitializer {
+abstract class AbstractEnglishFamiliesToSpellInitializer {
 
     public static final BigInteger TEN = BigInteger.valueOf(10L);
     public static final BigInteger HUNDRED = BigInteger.valueOf(100);

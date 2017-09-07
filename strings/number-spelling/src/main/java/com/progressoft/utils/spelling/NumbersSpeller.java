@@ -1,10 +1,10 @@
 package com.progressoft.utils.spelling;
 
-import java.math.BigInteger;
+import java.math.BigDecimal;
 
 
 public interface NumbersSpeller {
     String SPACE = " ";
 
-    String spell(BigInteger number);
+    String spell(BigDecimal number);
 }
