@@ -3,7 +3,6 @@ package com.progressoft.utils.spelling.english;
 import com.progressoft.utils.spelling.CurrencyProvider;
 import com.progressoft.utils.spelling.NumbersSpeller;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigDecimal;

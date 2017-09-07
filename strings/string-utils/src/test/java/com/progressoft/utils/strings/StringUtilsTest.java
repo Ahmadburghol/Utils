@@ -123,4 +123,45 @@ public class StringUtilsTest {
         assertEquals(0,StringUtils.frequencyOfValue("Progressoft","x"));
     }
 
+    @Test
+    public void usingStringUtils_whenCallingPadRightByWithStringLengthLessThanTarget_thenShouldPaddedString() {
+        String value = "value";
+        assertEquals("valuex",StringUtils.padRightBy(value,'x',6));
+        assertEquals("value",value);
+    }
+
+    @Test(expected = StringUtils.InvalidStringException.class)
+    public void usingStringUtils_whenCallingPadRightByWithNullString_thenShouldThrowException() {
+        StringUtils.padRightBy(null,'x',0);
+    }
+
+    @Test
+    public void usingStringUtils_whenCallingPadRightByWithStringLengthLargestThanTarget_thenShouldPaddedString() {
+        String value = "value";
+        assertEquals("value",StringUtils.padRightBy(value,'x',1));
+        assertEquals("value",value);
+    }
+
+    @Test
+    public void usingStringUtils_whenCallingPadRightByWithStringLengthSameAsTarget_thenShouldPaddedString() {
+        String value = "value";
+        assertEquals("value",StringUtils.padRightBy(value,'x',5));
+        assertEquals("value",value);
+    }
+
+    @Test(expected = StringUtils.InvalidStringException.class)
+    public void usingStringUtils_whenCallingRemoveMostCharactersWithNullString_thenShouldThrowException() {
+        StringUtils.removeRightMostCharacters(null,'0');
+    }
+
+    @Test
+    public void usingStringUtils_whenCallingRemoveMostCharactersWithStringAndFoundedCharacter_thenCharacterShouldBeRemoved() {
+        assertEquals("00123",StringUtils.removeRightMostCharacters("0012300",'0'));
+    }
+
+    @Test
+    public void usingStringUtils_whenCallingRemoveMostCharactersWithStringAndNotFoundedCharacter_thenShouldReturnSameString() {
+        assertEquals("0012300",StringUtils.removeRightMostCharacters("0012300",'3'));
+    }
+
 }

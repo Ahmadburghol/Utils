@@ -37,4 +37,17 @@ public class Constants {
             put(BigInteger.valueOf(90L), "ninety");
         }
     };
+    public static final int INTEGER_PART = 0;
+    public static final String ZERO = "0";
+    public static final String MINUS = "minus";
+    public static final String TOO_LARGE_NUMBER = "too large number";
+    public static final int FRACTION_PART = 1;
+    public static final int LESS_THAN = -1;
+    public static final String SPACE = " ";
+    public static final String AND = SPACE + "and" + SPACE;
+    public static final String NOTHING = "";
+    public static final String PLURAL = "s";
+    public static final String DOT = ".";
+    public static final char ZERO_DIGIT = '0';
+    public static final String ONE = "1";
 }

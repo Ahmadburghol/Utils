@@ -1,6 +1,7 @@
 package com.progressoft.utils.strings;
 
 import java.math.BigDecimal;
+import java.util.Stack;
 
 import static java.util.Objects.*;
 
@@ -49,6 +50,28 @@ public class StringUtils {
             searchFromIndex = lastFoundedValueAt + 1;
         }
         return frequencyOfValue;
+    }
+
+    public static String padRightBy(String string, char toAppend, int targetLength) {
+        if (isNull(string))
+            throw new InvalidStringException();
+        while(string.length()<targetLength)
+            string += toAppend;
+        return string;
+    }
+
+    public static String removeRightMostCharacters(String string, char toRemove) {
+        if (isNull(string))
+            throw new InvalidStringException();
+        Stack<Character> stack = new Stack<>();
+        for (char digit : string.toCharArray())
+            stack.push(digit);
+        while (!stack.isEmpty() && stack.peek() == toRemove)
+            stack.pop();
+        String value = "";
+        while (!stack.isEmpty())
+            value += stack.pop();
+        return new StringBuilder(value).reverse().toString();
     }
 
     public static class InvalidStringException extends RuntimeException {
