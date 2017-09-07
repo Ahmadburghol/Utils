@@ -1,15 +1,18 @@
 package com.progressoft.utils.spelling.english;
 
 import com.progressoft.utils.spelling.Constants;
+import com.progressoft.utils.spelling.CurrencyProvider;
 import com.progressoft.utils.spelling.NumbersSpeller;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
 
 public class NumbersToEnglishWords implements NumbersSpeller {
 
-    public static final int INTEGER_PART = 0;
+    private static final int INTEGER_PART = 0;
     private static final String ZERO = "0";
     private static final String MINUS = "minus";
     private static final String TOO_LARGE_NUMBER = "too large number";
@@ -24,7 +27,7 @@ public class NumbersToEnglishWords implements NumbersSpeller {
             "hundred-thousandth",
             "millionth",
             "ten-millionth",
-            "hundred-millionth" // TODO
+            "hundred-millionth"
 //            "billionth",
 //            "ten-billionth",
 //            "hundred-billionth",
@@ -49,26 +52,48 @@ public class NumbersToEnglishWords implements NumbersSpeller {
         }
     }.initializedList();
 
+    private CurrencyProvider currencyProvider;
+
+    public NumbersSpeller withCurrencyProvider(CurrencyProvider currencyProvider) {
+        this.currencyProvider = currencyProvider;
+        return this;
+    }
+
     @Override
     public String spell(BigDecimal number) {
-        if (number.toPlainString().contains(".")) {
-            String[] numberSections = number.toPlainString().split("\\.");
-            BigInteger integerPart = new BigInteger(numberSections[INTEGER_PART]);
-            BigInteger fractionPart = new BigInteger(numberSections[FRACTION_PART]);
-            if (!numberSections[INTEGER_PART].equals(ZERO) && !ZERO.equals(fractionPart.toString()))
-                return spell(integerPart) + AND + spellFractionPart(formatFraction(numberSections[FRACTION_PART]));
-            if (ZERO.equals(fractionPart.toString()))
-                return spell(integerPart);
-            return spellFractionPart(formatFraction(numberSections[FRACTION_PART]));
-        }
-        return spell(new BigInteger(number.toString()));
+        if (number.toPlainString().contains("."))
+            return spellDecimalNumber(number);
+        return spell(new BigInteger(number.toString())) + (currencyProvider != null ? " " + currencyProvider.integerPart(number.toString()) : "");
+    }
+
+    private String spellDecimalNumber(BigDecimal number) {
+        String[] numberSections = number.toPlainString().split("\\.");
+        BigInteger integerPart = new BigInteger(numberSections[INTEGER_PART]);
+        BigInteger fractionPart = new BigInteger(numberSections[FRACTION_PART]);
+        if (!numberSections[INTEGER_PART].equals(ZERO) && !ZERO.equals(fractionPart.toString()))
+            return spell(integerPart) +
+                    (currencyProvider != null ? " " + currencyProvider.integerPart(integerPart.toString()) : "")
+                    + AND + spellFractionPart(formatFraction(numberSections[FRACTION_PART]));
+        if (ZERO.equals(fractionPart.toString()))
+            return spell(integerPart) +
+                    (currencyProvider != null ? " " + currencyProvider.integerPart(integerPart.toString()) : "");
+        return spellFractionPart(formatFraction(numberSections[FRACTION_PART]));
     }
 
     private String spellFractionPart(String fraction) {
-        BigInteger number = new BigInteger(fraction);
-        return spell(number) + SPACE
-                + DECIMAL_FAMILIES[fraction.length() - 1]
-                + ("1".equals(number.toString()) ? "" : "s");
+        if (currencyProvider != null) {
+            while (fraction.length() < currencyProvider.fractionsLength())
+                fraction += "0";
+            if(fraction.length()>currencyProvider.fractionsLength())
+                throw new InvalidFractionsForProvidedCurrencyException();
+            BigInteger number = new BigInteger(fraction);
+            return spell(number) + SPACE + currencyProvider.fractionPart(number.toString());
+        } else {
+            BigInteger number = new BigInteger(fraction);
+            return spell(number) + SPACE
+                    + DECIMAL_FAMILIES[fraction.length() - 1]
+                    + ("1".equals(number.toString()) ? "" : "s");
+        }
     }
 
     private String spell(BigInteger number) {
@@ -106,5 +131,4 @@ public class NumbersToEnglishWords implements NumbersSpeller {
             value += stack.pop();
         return new StringBuilder(value).reverse().toString();
     }
-
 }

@@ -1,5 +1,6 @@
 package com.progressoft.utils.spelling.english;
 
+import com.progressoft.utils.spelling.CurrencyProvider;
 import com.progressoft.utils.spelling.NumbersSpeller;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -11,6 +12,23 @@ import static org.junit.Assert.assertEquals;
 
 public class NumbersToEnglishWordsTest {
 
+    private static final CurrencyProvider DOLLAR_CURRENCY_PROVIDER = new CurrencyProvider() {
+
+        @Override
+        public String integerPart(String number) {
+            return number.equals("1") ? "dollar" : "dollars";
+        }
+
+        @Override
+        public String fractionPart(String number) {
+            return number.equals("1") ? "cent" : "cents";
+        }
+
+        @Override
+        public int fractionsLength() {
+            return 2;
+        }
+    };
     private NumbersSpeller numberToWords;
 
     @Before
@@ -434,5 +452,45 @@ public class NumbersToEnglishWordsTest {
         assertEquals("one hundred one ten-thousandths", numberToWords.spell(new BigDecimal("0.010100")));
     }
 
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_thenShouldReturnTheNumberAsWords() {
+        assertEquals("one dollar and one cent",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("1.01")));
+    }
+
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_2_thenShouldReturnTheNumberAsWords() {
+        assertEquals("one dollar and ten cents",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("1.1")));
+    }
+
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_3_thenShouldReturnTheNumberAsWords() {
+        assertEquals("one dollar and ten cents",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("1.10000")));
+    }
+
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_4_thenShouldReturnTheNumberAsWords() {
+        assertEquals("two dollars and three cents",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("2.03")));
+    }
+
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_5_thenShouldReturnTheNumberAsWords() {
+        assertEquals("two dollars and thirty cents",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("2.3")));
+    }
+
+    @Test
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValue_6_thenShouldReturnTheNumberAsWords() {
+        assertEquals("two dollars and thirty-eight cents",
+                new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("2.38")));
+    }
+
+    @Test(expected = NumbersSpeller.InvalidFractionsForProvidedCurrencyException.class)
+    public void givenNumberToWardsWithDollarCurrency_whenAskingForSpellDecimalValueWithFractionsLongestThanCurrencyFractionsLength_thenShouldReturnTheNumberAsWords() {
+        new NumbersToEnglishWords().withCurrencyProvider(DOLLAR_CURRENCY_PROVIDER).spell(new BigDecimal("1.10005"));
+    }
 
 }
