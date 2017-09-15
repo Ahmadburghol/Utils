@@ -78,12 +78,13 @@ public class NumbersToEnglishWords implements NumbersSpeller {
         String[] numberSections = number.toPlainString().split("\\.");
         BigInteger integerPart = new BigInteger(numberSections[INTEGER_PART]);
         BigInteger fractionPart = new BigInteger(numberSections[FRACTION_PART]);
-        if (!numberSections[INTEGER_PART].equals(ZERO) && !ZERO.equals(fractionPart.toString()))
+        if (!ZERO.equals(integerPart.toString()) && !ZERO.equals(fractionPart.toString()))
             return spellIntegerPart(integerPart) + AND + spellFractionPart(removeRightMostZeros(numberSections[FRACTION_PART]));
         if (ZERO.equals(fractionPart.toString()))
             return spellIntegerPart(integerPart);
         return spellFractionPart(removeRightMostZeros(numberSections[FRACTION_PART]));
     }
+
 
     private String spellIntegerPart(BigInteger integerPart) {
         return spell(integerPart) + spellIntegerCurrency(integerPart.toString());
