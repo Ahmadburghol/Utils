@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a63cd2-b410-486f-b040-05f779e97a2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/iban-validator.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/src/test/java/com/progressoft/utils/iban/validation/IbanValidatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/CountriesIbanSpecification.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strings/iban-validator/src/main/resources/countries-ibanspecification.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/graphs.iml" afterPath="$PROJECT_DIR$/graphs/graphs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/pom.xml" afterPath="$PROJECT_DIR$/strings/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/strings.iml" afterPath="$PROJECT_DIR$/strings/strings.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.iml" afterPath="$PROJECT_DIR$/utils.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/iban-validator/iban-validator.iml" afterPath="$PROJECT_DIR$/strings/iban-validator/iban-validator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java" afterPath="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +37,8 @@
       <file leaf-file-name="IbanValidatorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/test/java/com/progressoft/utils/iban/validation/IbanValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+            <state relative-caret-position="990">
+              <caret line="55" column="74" lean-forward="false" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
@@ -56,13 +48,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IbanValidator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IbanValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="36" column="70" lean-forward="false" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+            <state relative-caret-position="172">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountriesIbanSpecification.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/CountriesIbanSpecification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2971#2972#0" expanded="true" />
+                <element signature="e#3041#3042#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +158,10 @@
         <option value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/Country.java" />
         <option value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/Countries.java" />
         <option value="$PROJECT_DIR$/strings/iban-validator/src/test/java/com/progressoft/utils/iban/validation/IbanValidatorTest.java" />
+        <option value="$PROJECT_DIR$/strings/iban-validator/src/main/resources/countries-ibanspecification.properties" />
+        <option value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/CountriesIbanFormat.java" />
         <option value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java" />
+        <option value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/CountriesIbanSpecification.java" />
       </list>
     </option>
   </component>
@@ -229,7 +238,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="number-spelling" />
+              <option name="myItemId" value="iban-validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -247,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="number-spelling" />
+              <option name="myItemId" value="iban-validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -269,7 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="number-spelling" />
+              <option name="myItemId" value="iban-validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -281,59 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spelling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iban-validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iban-validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,8 +335,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../full-chat" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils" />
@@ -820,24 +776,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 05m 34s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 05m 45s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 13m 57s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 15m 05s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 18m 01s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 18m 15s.xml">
-      <configuration name="IbanValidatorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 19m 13s.xml">
       <configuration name="IbanValidatorTest" configurationId="JUnit" />
     </history-entry>
@@ -848,6 +786,24 @@
       <configuration name="IbanValidatorTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 22m 20s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 12h 22m 53s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 14h 15m 40s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 14h 17m 50s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 14h 19m 54s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 14h 20m 32s.xml">
+      <configuration name="IbanValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IbanValidatorTest - 2017.10.05 at 14h 40m 52s.xml">
       <configuration name="IbanValidatorTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -865,7 +821,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.501994" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24789207" sideWeight="0.498006" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34738618" sideWeight="0.498006" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60033727" sideWeight="0.498006" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -957,22 +913,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/strings/number-spelling/src/main/java/com/progressoft/utils/spelling/NumbersSpeller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strings/number-spelling/src/main/java/com/progressoft/utils/spelling/english/UpperBoundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/strings/number-spelling/src/test/java/com/progressoft/utils/spelling/english/NumbersToEnglishWordsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
@@ -1289,8 +1229,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/test/java/com/progressoft/utils/iban/validation/IbanValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        <state relative-caret-position="990">
+          <caret line="55" column="74" lean-forward="false" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
@@ -1299,12 +1239,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/main/resources/countries-ibanspecification.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/IbanValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="36" column="70" lean-forward="false" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+        <state relative-caret-position="172">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings/iban-validator/src/main/java/com/progressoft/utils/iban/validation/CountriesIbanSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3041#3042#0" expanded="true" />
           </folding>
         </state>
       </provider>

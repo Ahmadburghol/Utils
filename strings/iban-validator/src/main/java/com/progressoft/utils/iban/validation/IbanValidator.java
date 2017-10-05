@@ -11,12 +11,6 @@ import static java.util.Objects.*;
  */
 public class IbanValidator {
 
-    private static final Map<String, Integer> COUNTRIES_IBAN_LENGTHS = new HashMap<String, Integer>() {
-        {
-            put("JO", 30);
-        }
-    };
-
     public boolean isValidIban(String iban) {
         if (isNull(iban))
             throw new InvalidIbanException();
@@ -32,9 +26,9 @@ public class IbanValidator {
 
     private boolean wrongIbanSpecification(String iban) {
         String countryCode = iban.substring(0, 2);
-        if(!COUNTRIES_IBAN_LENGTHS.containsKey(countryCode))
+        if(!CountriesIbanSpecification.isCountryExist(countryCode))
             return false;
-        return iban.length() != COUNTRIES_IBAN_LENGTHS.get(countryCode);
+        return iban.length()!= CountriesIbanSpecification.getCountryIbanLength(countryCode);
     }
 
     private String decodeIban(String iban) {
